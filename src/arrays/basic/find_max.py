@@ -34,4 +34,9 @@ def find_max(arr):
     Returns:
         The maximum element in the array
     """
-    pass
+    temp = arr[0]
+    for i in range(0, len(arr), 1):
+        if arr[i] > temp:
+            temp = arr[i]
+    return temp
+
