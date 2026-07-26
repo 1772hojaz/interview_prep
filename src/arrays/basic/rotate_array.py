@@ -39,3 +39,6 @@ def rotate_array(arr):
         a.append(element)
 
     return a
+
+x = [1,2,3,4,5]
+print(rotate_array(x))
