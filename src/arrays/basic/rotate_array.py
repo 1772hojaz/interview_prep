@@ -15,7 +15,3 @@ def rotate_array(arr):
     for element in arr[::-1]:
         a.append(element)
     return a
-
-array = [1,2,3,4,5]
-
-print(rotate_array(array))
