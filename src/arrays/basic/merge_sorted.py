@@ -1,15 +1,42 @@
 #!/usr/bin/env python3
-"""Merge Two Sorted Arrays"""
+"""Merge Two Sorted Arrays
+
+Problem: Given two sorted arrays of integers, merge them into
+a single sorted array.
+
+Example:
+    merge_sorted([1, 3, 5], [2, 4, 6]) -> [1, 2, 3, 4, 5, 6]
+    merge_sorted([1, 2, 3], [4, 5, 6]) -> [1, 2, 3, 4, 5, 6]
+    merge_sorted([], [1, 2, 3]) -> [1, 2, 3]
+
+Edge Cases:
+    - One or both arrays empty
+    - Arrays of different lengths
+    - Duplicate values across or within arrays
+    - Negative numbers
+
+Approach (Two-Pointer Merge):
+    1. Initialize two pointers, i and j, both at index 0
+    2. Compare arr1[i] and arr2[j]
+    3. Append the smaller value to the result and advance that pointer
+    4. Repeat until one array is fully consumed
+    5. Append all remaining elements from the other array
+
+This is the same merge logic used in the Merge Sort algorithm.
+
+Time Complexity:  O(n + m) where n and m are the lengths of the two arrays
+Space Complexity: O(n + m) for the result array
+"""
 
 
-def merge_sorted(arr):
+def merge_sorted(arr1, arr2):
     """Merge Two Sorted Arrays.
-    
+
     Args:
-        arr: List of integers
-        
+        arr1: First sorted list of integers
+        arr2: Second sorted list of integers
+
     Returns:
-        Result based on problem description
+        A new sorted list containing all elements from both arrays
     """
     pass
-
