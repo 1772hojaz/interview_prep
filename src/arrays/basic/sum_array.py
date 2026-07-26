@@ -11,5 +11,11 @@ def sum_array(arr):
     Returns:
         Result based on problem description
     """
-    pass
+    temp = arr[0]
+    for i in range(1, len(arr), 1):
+        temp = temp + arr[i]
+    return temp
 
+a = [1,2,3,4,5]
+
+print(sum_array(a))
