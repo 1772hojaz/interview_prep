@@ -41,4 +41,7 @@ def second_largest(arr):
     Returns:
         The second largest distinct element
     """
-    pass
+    sorted_arry = sorted(arr, reverse=True)
+    return sorted_arry[1]
+
+    
