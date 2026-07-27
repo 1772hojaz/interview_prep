@@ -39,4 +39,25 @@ def merge_sorted(arr1, arr2):
     Returns:
         A new sorted list containing all elements from both arrays
     """
-    pass
+    x = len(arr1)
+    y = len(arr2)
+    i = 0
+    j = 0
+    a = []
+    while i < x and j < y:
+        if arr1[i] <= arr2[j]:
+            a.append(arr1[i])
+            i += 1
+        else:
+            a.append(arr2[j])
+            j += 1
+    while i < x:
+        a.append(arr1[i])
+        i+=1
+    while j < y:
+        a.append(arr2[j])
+        j+=1
+    return a
+
+
+print(merge_sorted([1, 3, 5], [2, 4, 6]))
