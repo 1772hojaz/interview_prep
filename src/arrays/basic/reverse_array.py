@@ -39,4 +39,8 @@ def reverse_array(arr):
     Returns:
         A new list with elements in reverse order
     """
-    pass
+    a = []
+    for element in arr[::-1]:
+        a.append(element)
+
+    return a
