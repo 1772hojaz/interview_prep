@@ -59,5 +59,3 @@ def merge_sorted(arr1, arr2):
         j+=1
     return a
 
-
-print(merge_sorted([1, 3, 5], [2, 4, 6]))
