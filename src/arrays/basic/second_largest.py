@@ -54,10 +54,12 @@ def second_largest(arr):
         raise ValueError("Single element")
 
     for i in range(1, x, 1):
+        #If the current number is greater than temp. Temp is replaced and the current number is put to be the second number
         if arr[i] > temp:
             second = temp
             temp = arr[i]
 
+        # if the second number is less than the current and is not equal to temp then it should be the second number
         elif arr[i] > second and arr[i] != temp:
             second = arr[i]
         
