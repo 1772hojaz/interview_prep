@@ -41,7 +41,30 @@ def second_largest(arr):
     Returns:
         The second largest distinct element
     """
-    sorted_arry = sorted(arr, reverse=True)
-    return sorted_arry[1]
+    #Todo:
+        # make a temp variable that stores the first element
+        # If the next element in the array is > than the temp, then store temp in the sec_ond variable 
 
+    temp = arr[0]
+    second = 0
+    x = len(arr)
+    if x == 0:
+        raise ValueError("Empty array")
+    elif x ==1:
+        raise ValueError("Single element")
+
+    for i in range(1, x, 1):
+        if arr[i] > temp:
+            second = temp
+            temp = arr[i]
+
+        elif arr[i] > second and arr[i] != temp:
+            second = arr[i]
+        
+
+ 
     
+    return second
+
+a = [5, 1, 4, 2, 3]
+print(second_largest(a))
