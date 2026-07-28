@@ -41,4 +41,13 @@ def remove_duplicates(arr):
     Returns:
         A new list with duplicates removed, preserving order
     """
-    pass
+
+
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            if arr[i] == arr[j]:
+                arr.remove(arr[j])
+    return arr
+
+a = [2,5,5,5,5,1]
+print(remove_duplicates(a))
